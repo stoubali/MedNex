@@ -88,6 +88,20 @@ body {
     border-radius: 5px;
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* space between logo and text */
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.logo-img {
+    width: 40px; /* adjust size as needed */
+    height: 40px; /* keep it square */
+    object-fit: contain; /* prevents stretching */
+}
+
 /* ===== HERO / MAIN ===== */
 .main {
     width: 100%;

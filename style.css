@@ -355,6 +355,24 @@ body {
     cursor: pointer;
 }
 
+.btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1da851;
+    transform: scale(1.05);
+}
+
 /* ===== FOOTER ===== */
 .footer {
     background: #007bff;
@@ -542,3 +560,43 @@ body {
         padding: 20px;
     }
 }
+
+
+/* ===== SMALL SCREEN IMPROVEMENTS ===== */
+@media(max-width:480px) {
+    .hero-inner h2 { font-size: 1em; line-height: 1.2em; }
+    .hero-inner h2 span { font-size: 1.4em; }
+    .hero-inner h3 { font-size: 0.95em; }
+    .main-btn { font-size: 0.9em; padding: 6px 12px; }
+    .social-icons a { font-size: 1.2em; }
+
+    .nav-container { flex-direction: column; gap: 10px; }
+    .nav-links { flex-direction: column; gap: 10px; width: 100%; }
+    .emergency-btn { width: 100%; max-width: 250px; }
+
+    .services-grid,
+    .doctors-grid,
+    .contact-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+    .footer-content { flex-direction: column; gap: 20px; }
+    .social-links a { font-size: 1.3em; }
+}
+
+/* ===== FLOATING WHATSAPP BUTTON ===== */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 18px;
+    border-radius: 50px;
+    font-size: 1.5em;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+}
+.whatsapp-float:hover { transform: scale(1.1); }
